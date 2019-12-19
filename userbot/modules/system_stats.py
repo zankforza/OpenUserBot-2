@@ -119,11 +119,10 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^.on$")
-async def amireallyalive(on):
-    """ For .on command, check if the bot is running.  """
-    await on.edit(" Hi I'm Alive Master :*\n"
-                  " Hope your days great \n"
+@register(outgoing=True, pattern="^.alive$")
+async def amireallyalive(alive):
+    """ For .alive command, check if the bot is running.  """
+    await alive.edit(" Hi I'm Alive Master :*\n"          
                   f"~ Telethon ver : {version.__version__} \n"
                   f"~ Python ver  : {python_version()} \n\n"
                   f"~ {DEFAULTUSER} ~")
