@@ -107,7 +107,7 @@ async def set_group_photo(gpic):
 
 @register(outgoing=True, pattern="^.promote(?: |$)(.*)")
 async def promote(promt):
-    """ For .promote command, promotes the replied/tagged person """
+    """ For .promote command, promotes the replied/tagged a person """
     # Get targeted chat
     chat = await promt.get_chat()
     # Grab admin status or creator in a chat
@@ -126,7 +126,7 @@ async def promote(promt):
                                  delete_messages=True,
                                  pin_messages=True)
 
-    await promt.edit("`Promoting...`")
+    await promt.edit("`Promoting wait for a minute...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "Administrator"  # Just in case.
@@ -206,7 +206,7 @@ async def demote(dmod):
 
 @register(outgoing=True, pattern="^.ban(?: |$)(.*)")
 async def ban(bon):
-    """ For .ban command, bans the replied/tagged person """
+    """ For .ban command, bans the replied/tagged a person """
     # Here laying the sanity check
     chat = await bon.get_chat()
     admin = chat.admin_rights
@@ -224,7 +224,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`This User Has Been Banned!`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
@@ -259,7 +259,7 @@ async def ban(bon):
 
 @register(outgoing=True, pattern="^.unban(?: |$)(.*)")
 async def nothanos(unbon):
-    """ For .unban command, unbans the replied/tagged person """
+    """ For .unban command, unbans the replied/tagged a person """
     # Here laying the sanity check
     chat = await unbon.get_chat()
     admin = chat.admin_rights
@@ -356,7 +356,7 @@ async def spider(spdr):
 
 @register(outgoing=True, pattern="^.unmute(?: |$)(.*)")
 async def unmoot(unmot):
-    """ For .unmute command, unmute the replied/tagged person """
+    """ For .unmute command, unmute the replied/tagged a person """
     # Admin or creator check
     chat = await unmot.get_chat()
     admin = chat.admin_rights
