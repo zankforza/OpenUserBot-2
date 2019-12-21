@@ -114,16 +114,8 @@
       "description": "Enter Your Client ID for Google Drive.",
       "required": false
     },
-    "SPOTIFY_USERNAME": {
-      "description": "Your Username for Spotify module.",
-      "required": false
-    },
-    "SPOTIFY_PASS": {
-      "description": "Your Password for Spotify module.",
-      "required": false
-    },
     "BIO_PREFIX": {
-      "description": "Prefix for Spotify Module Bio.",
+      "description": "Prefix for Last.FM Module Bio.",
       "required": false
     },
     "DEFAULT_BIO": {
