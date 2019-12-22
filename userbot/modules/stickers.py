@@ -19,6 +19,8 @@ from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
+    "Eh... Koq bagus... aku kang ahhh :3",
+    "Aku kang y kakak :)",
     "Using Witchery to kang this sticker...",
     "Plagiarising hehe...",
     "Inviting this sticker over to my pack...",
@@ -28,7 +30,7 @@ KANGING_STR = [
     "Ay look over there (☉｡☉)!→\nWhile I kang this...",
     "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
     "Imprisoning this sticker...",
-    "Mr.Steal Your Sticker is stealing this sticker... ",
+    "Mr.Miss is stealing this sticker... ",
 ]
 
 
