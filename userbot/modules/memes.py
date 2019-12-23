@@ -707,7 +707,7 @@ async def slap(replied_user, event):
 async def lol(lel):
     """ Ok... """
     okay = "-_-"
-    for i in range(10):
+    for i in range(20):
         okay = okay[:-1] + "_-"
         await lel.edit(okay)
 
@@ -743,7 +743,8 @@ async def facepalm(e):
 
 @register(outgoing=True, pattern="^.cry$")
 async def cry(e):
-    """ y u du dis, i cry everytime !! """
+    """ Join us \n
+    Nangis Aja """
     await e.edit(choice(CRI))
 
 
