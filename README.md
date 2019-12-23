@@ -5,7 +5,7 @@
 <p align="center"><a href="#how-to-host">How To Host</a> | <a href="#updates-and-support">Updates and Support</a> | <a href="#credits">Credits</a> | <a href="#license">License</a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">How To Host</h2>
-<h5 align="center">The easiest way to deploy this derpfest! is click on the image below</h5>
+<h5 align="center">The easiest way to deploy this great bot! is click on the image below</h5>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/keselekpermen69/OpenUserBot/tree/sql-extended"> <img src="https://pm1.narvii.com/6813/63083c6d3265b6ace9b27d853167fbda00b1860bv2_hq.jpg" alt="Deploy to Heroku" /></a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Credits</h2>
