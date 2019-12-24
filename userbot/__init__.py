@@ -116,12 +116,6 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 # Clean Welcome
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
-# Spotify Module
-SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME", None)
-SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS", None)
-BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
-
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
