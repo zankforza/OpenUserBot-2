@@ -5,8 +5,8 @@
 <p align="center"><a href="#how-to-host">How To Host</a> | <a href="#updates-and-support">Updates and Support</a> | <a href="#credits">Credits</a> | <a href="#license">License</a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">How To Host</h2>
-<h5 align="center">The easiest way to deploy this derpfest! is click on the image below</h5>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/MoveAngel/OpenUserBot-2/tree/sql-extended"> <img src="https://telegra.ph/file/e30939254c9ece5233ee0.jpg" alt="Deploy to Heroku" /></a></p>
+<h5 align="center">The easiest way to deploy this great bot! is click on this CUTE GIRL image below >.< </h5>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/MoveAngel/OpenUserBot-2/tree/sql-extended"> <img src="https://i.ibb.co/wgX57GS/photo-2019-12-31-23-40-09.jpg" alt="Deploy to Heroku" /></a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Credits</h2>
 <p align="center">Huge thanks to <a href="https://github.com/mkaraniya/OpenUserBot/graphs/contributors">everyone</a> who have helped make this userbot awesome!!</p>
@@ -14,7 +14,7 @@
 <p align="center">&nbsp;</p>
 <h2 align="center">Updates and Support</h2>
 <p align="center">Join our <a href="https://t.me/PaperplaneExtended_news">Telegram Channel</a> for update notifications!</p>
-<p align="center">Also join our <a href="https://t.me/PPE_Support">Telegram Support Group</a> for help and support!</p>
+<p align="center">Also join our <a href="https://t.me/userbotindo">//Userbot Heroku Indonesia//</a> for help and support!</p>
 <p align="center">&nbsp;</p>
 <h2 align="center">License</h2>
 <p align="center"><a href="https://github.com/mkaraniya/OpenUserBot/blob/sql-extended/LICENSE">Raphielscape Public License</a> - Version 1.c, June 2019</p>
