@@ -6,7 +6,7 @@
 from telethon import events
 
 
-@borg.on(events.NewMessage(pattern=r"\.all", outgoing=True))
+@register(events.NewMessage(pattern=r"\.all", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
