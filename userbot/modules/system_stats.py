@@ -127,6 +127,7 @@ async def amireallyalive(alive):
                      " I'm running \n"    
                   f"~ Telethon ver : {version.__version__} \n"
                   f"~ Python ver  : {python_version()} \n"
+                     " ---------------------------------------- \n"
                   f"User : {DEFAULTUSER}  \n"
                      " ---------------------------------------- \n\n"
                      "감사합니다 💝 \n"
