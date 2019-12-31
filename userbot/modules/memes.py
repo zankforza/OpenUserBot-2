@@ -946,15 +946,12 @@ async def Oem(e):
         await e.edit(t)
 
 
-
-
 @register(outgoing=True, pattern="^.Oem$")
 async def Oem(e):
     t = "Oem"
     for j in range(16):
         t = t[:-1] + "em"
         await e.edit(t)
-
 
 
 @register(outgoing=True, pattern="^.10iq$")
@@ -973,6 +970,10 @@ async def moon(event):
     except BaseException:
         return
 
+@register(outgoing=True, pattern="^.fuck$")
+async def iqless(e):
+    await e.edit("🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\🖕🖕;")               
+                      
 
 @register(outgoing=True, pattern="^.clock$")
 async def clock(event):
@@ -985,6 +986,7 @@ async def clock(event):
     except BaseException:
         return
 
+                      
 @register(outgoing=True, pattern="^.love$")
 async def love(event):
     deq = deque(list("❤️🧡💛💚💙💜🖤💕💞💓💗💖💘💝"))
@@ -995,6 +997,7 @@ async def love(event):
             deq.rotate(1)
     except BaseException:
         return
+                      
                       
 @register(outgoing=True, pattern="^.mock(?: |$)(.*)")
 async def spongemocktext(mock):
@@ -1010,6 +1013,7 @@ async def spongemocktext(mock):
         await mock.edit("`gIvE sOMEtHInG tO MoCk!`")
         return
 
+                      
     for charac in message:
         if charac.isalpha() and randint(0, 1):
             to_app = charac.upper() if charac.islower() else charac.lower()
@@ -1139,6 +1143,18 @@ async def taco(e):
         await e.edit("\n{\__/}"
                      "\n(●_●)"
                      "\n( >🌮 Want a taco?")
+                      
+                      
+@register(outgoing=True, pattern="^.nih$")
+async def nih(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("`\n(\_/)`"
+                     "`\n( •_•)`"
+                     "\n >🌹  *ini buat kamu"
+                     "`\n                    `"
+                     "`\n(\_/)`"
+                     "`\n( •_•)`"
+                     "`\n🌹<\  *tapi boong`")
                      
 
 @register(outgoing=True, pattern="^.paw$")  
@@ -1248,6 +1264,8 @@ CMD_HELP.update({
 \nUsage: Haha yes\
 \n\n.mock\
 \nUsage: Do it and find the real fun.\
+\n\n.fuck\
+\nUsage: You retard, FUCK !!\
 \n\n.clap\
 \nUsage: Praise people!\
 \n\n.f <emoji/character>\
