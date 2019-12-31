@@ -26,8 +26,8 @@ if LYDIA_API_KEY:
     api_key = LYDIA_API_KEY
     api_client = coffeehouse.API(api_key)
 
-@register(outgoing=True, pattern="^.repcf$")
-async def repcf(event):
+@register(outgoing=True, pattern="^.ngomong$")
+async def ngomong(event):
     if event.fwd_from:
         return
     await event.edit("Processing...")
@@ -41,8 +41,8 @@ async def repcf(event):
     except Exception as e:
         await event.edit(str(e))
 
-@register(outgoing=True, pattern="^.addcf$")
-async def addcf(event):
+@register(outgoing=True, pattern="^.nyalain$")
+async def nyalain(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
@@ -58,8 +58,8 @@ async def addcf(event):
     else:
         await event.edit("Reply to a user to activate Lydia AI on them")
 
-@register(outgoing=True, pattern="^.remcf$")
-async def remcf(event):
+@register(outgoing=True, pattern="^.matiin$")
+async def matiin(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
@@ -94,11 +94,11 @@ async def user(event):
     
 """CMD_HELP.update({
     "lydia":
-    ".addcf <username/reply>\
+    ".nyalain <username/reply>\
 \nUsage: add's lydia auto chat request in the chat.\
-\n\n.remcf <username/reply>\
+\n\n.matiin <username/reply>\
 \nUsage: remove's lydia auto chat request in the chat.\
-\n\n.repcf <username/reply>\
+\n\n.ngomong <username/reply>\
 \nUsage: starts lydia repling to perticular person in the chat."
 })
 """
