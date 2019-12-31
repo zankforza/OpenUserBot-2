@@ -6,7 +6,7 @@
 <p align="center">&nbsp;</p>
 <h2 align="center">How To Host</h2>
 <h5 align="center">The easiest way to deploy this great bot! is click on this CUTE GIRL image below >.< </h5>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/keselekpermen69/OpenUserBot/tree/sql-extended"> <img src="https://pm1.narvii.com/6813/63083c6d3265b6ace9b27d853167fbda00b1860bv2_hq.jpg" alt="Deploy to Heroku" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/MoveAngel/OpenUserBot-2/tree/sql-broken"> <img src="https://ibb.co/pw8YQVf" alt="Deploy to Heroku" /></a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Credits</h2>
 <p align="center">Huge thanks to <a href="https://github.com/mkaraniya/OpenUserBot/graphs/contributors">everyone</a> who have helped make this userbot awesome!!</p>
@@ -14,7 +14,7 @@
 <p align="center">&nbsp;</p>
 <h2 align="center">Updates and Support</h2>
 <p align="center">Join our <a href="https://t.me/PaperplaneExtended_news">Telegram Channel</a> for update notifications!</p>
-<p align="center">Also join our <a href="https://t.me/PPE_Support">Telegram Support Group</a> for help and support!</p>
+<p align="center">Also join our <a href="https://t.me/userbotindo">//Userbot Heroku //🇲🇨</a> for help and support!</p>
 <p align="center">&nbsp;</p>
 <h2 align="center">License</h2>
 <p align="center"><a href="https://github.com/mkaraniya/OpenUserBot/blob/sql-extended/LICENSE">Raphielscape Public License</a> - Version 1.c, June 2019</p>
