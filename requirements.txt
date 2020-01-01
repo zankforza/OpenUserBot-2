@@ -5,6 +5,7 @@ bs4
 cowpy
 # cryptg
 cffi>=1.0.0
+datetime
 dnspython
 emoji
 gitpython
