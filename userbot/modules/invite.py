@@ -1,4 +1,5 @@
 from telethon import functions
+from userbot import CMD_HELP
 from userbot.events import register
 
 
