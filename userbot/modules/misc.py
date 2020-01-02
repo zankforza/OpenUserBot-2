@@ -88,12 +88,17 @@ async def bot_support(wannahelp):
     """ For .support command, just returns the group link. """
     await wannahelp.edit(
         "Join the OpenUserBot Channel: @PaperPlaneExtended_news \
-        \nJoin the OpenUserBot Chat: @PPE_Support")
+        \nJoin the Userbotindo Chat: @userbotindo")
 
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
     await e.edit("[TeKnoways](https://t.me/Three_Cube_TeKnoways)")
+    
+
+@register(outgoing=True, pattern="^.kanger$")
+async def kanger(e):
+    await e.edit("[MoveAngel](https://t.me/MoveAngel)")    
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -128,7 +133,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [here](https://github.com/mkaraniya/OpenUserBot) to open OpenUserBot's GitHub page."
+        "Click [MoveAngel](https://github.com/MoveAngel/OpenUserBot-2) to open my repo GitHub page."
     )
 
 
