@@ -43,7 +43,7 @@ from PIL import Image, ImageEnhance, ImageOps
 from telethon.tl.types import DocumentAttributeFilename
 
 from userbot import CMD_HELP
-from userbot.events import errors_handler, register
+from userbot.events import register
 
 
 @register(outgoing=True, pattern="^.deepfry(?: |$)(.*)")
