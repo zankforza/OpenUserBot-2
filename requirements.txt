@@ -38,7 +38,6 @@ sqlalchemy>=1.2
 telegraph
 telethon>=1.10.6
 telethon-session-sqlalchemy>=0.2.6
-time
 urbandict>=0.5
 wikipedia>=1.4.0
 coffeehouse
