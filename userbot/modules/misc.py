@@ -91,14 +91,9 @@ async def bot_support(wannahelp):
         \nJoin the Userbotindo Chat: @userbotindo")
 
 
-@register(outgoing=True, pattern="^.creator$")
-async def creator(e):
-    await e.edit("[TeKnoways](https://t.me/Three_Cube_TeKnoways)")
-    
-
-@register(outgoing=True, pattern="^.kanger$")
-async def kanger(e):
-    await e.edit("[MoveAngel](https://t.me/MoveAngel)")    
+@register(outgoing=True, pattern="^.contributor$")
+async def contributor(e):
+    await e.edit("Creator by [TeKnoways](https://t.me/Three_Cube_TeKnoways) Modification and kanged by [tϴͷῖstαrk | 미나 🍨](https://t.me/MoveAngel)")
 
 
 @register(outgoing=True, pattern="^.readme$")
