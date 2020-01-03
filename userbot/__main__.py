@@ -26,12 +26,12 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("You are running OpenUserBot [v7.7]")
+LOGS.info("You are running OpenUserBot [v69]")
 
 LOGS.info(
-    "Congratulations, your userbot is now running !! Test it by typing .on in any chat."
+    "Congratulations, your userbot is now running !! Test it by typing .alive in any chat."
     "Once died , but now ON again, A BIG thanks to https://github.com/Devp73 Dev Patel who have helped make this userbot ON AGAIN with his HUGE FIX!!"
-    "If you need assistance, head to https://t.me/PPE_Support")
+    "If you need assistance, head to https://t.me/userbotindo")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
