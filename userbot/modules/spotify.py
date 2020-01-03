@@ -17,7 +17,7 @@ from telethon.errors import AboutTooLongError
 from telethon.tl.functions.account import UpdateProfileRequest
 
 from userbot import (BIO_PREFIX, BOTLOG, BOTLOG_CHATID, CMD_HELP, DEFAULT_BIO,
-                     SPOTIFY_PASS, SPOTIFY_USERNAME, bot, DB_URI)
+                     SPOTIFY_PASS, SPOTIFY_USERNAME, bot, is_redis_alive)
 from userbot.events import register
 from userbot.modules.sql_helper.opohelp import (exceptionexist, getspotifycheck,
                                       sfgetartist, sfgetsong, sfsetartist,
@@ -107,7 +107,7 @@ async def dirtyfix():
 
 @register(outgoing=True, pattern="^.enablespotify$")
 async def set_biostgraph(setstbio):
-    if not DB_URI():
+    if not is_redis_alive():
         setstbio.edit("Who forgot their Redis?")
         return
     setrecursionlimit(700000)
@@ -122,7 +122,7 @@ async def set_biostgraph(setstbio):
 
 @register(outgoing=True, pattern="^.disablespotify$")
 async def set_biodgraph(setdbio):
-    if not DB_URI():
+    if not is_redis_alive():
         setdbio.edit("Who forgot their Redis?")
         return
     await spotifycheck("False")
