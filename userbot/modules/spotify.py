@@ -107,7 +107,7 @@ async def dirtyfix():
 
 @register(outgoing=True, pattern="^.enablespotify$")
 async def set_biostgraph(setstbio):
-    if not is_redis_alive():
+    if not DB_URI():
         setstbio.edit("Who forgot their Redis?")
         return
     setrecursionlimit(700000)
@@ -122,7 +122,7 @@ async def set_biostgraph(setstbio):
 
 @register(outgoing=True, pattern="^.disablespotify$")
 async def set_biodgraph(setdbio):
-    if not is_redis_alive():
+    if not DB_URI():
         setdbio.edit("Who forgot their Redis?")
         return
     await spotifycheck("False")
