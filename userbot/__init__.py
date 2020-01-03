@@ -147,6 +147,41 @@ GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
                                          "./downloads")
 
+# Init Mongo
+FCLIENT = FClient(DB_URI, , serverSelectionTimeoutMS=1)
+DONGO = FCLIENT.userbot
+
+
+def is_dongo_alive():
+    try:
+        FCLIENT.server_info()
+    except BaseException:
+        return False
+    return True
+
+
+# Init Redis
+# Redis will be hosted inside the docker container that hosts the bot
+# We need redis for just caching, so we just leave it to non-persistent
+REDIS = StrictRedis(host='', port=0, db=0)
+
+
+def is_redis_alive():
+    try:
+        REDIS.ping()
+        return True
+    except BaseException:
+        return False
+
+def runningInDocker():
+    with open('/proc/self/cgroup', 'r') as procfile:
+        for line in procfile:
+            stripsplit = line.strip().split('/')
+            if 'docker' in stripsplit:
+                return True
+
+    return False
+
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
 if not os.path.exists('bin'):
