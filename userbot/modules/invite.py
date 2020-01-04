@@ -17,7 +17,7 @@ async def _(event):
                 try:
                     await event.client(functions.messages.AddChatUserRequest(
                         chat_id=event.chat_id,
-                        user_id=user_id,
+                        user_id=user.id,
                         fwd_limit=1000000
                     ))
                 except Exception as e:
