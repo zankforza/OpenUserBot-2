@@ -147,8 +147,8 @@ GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
                                          "./downloads")
 
-# Init Mongo
-FCLIENT = FClient(DB_URI, , serverSelectionTimeoutMS=1)
+# Init Dongo
+FCLIENT = FClient(DB_URI, 27017, serverSelectionTimeoutMS=1)
 DONGO = FCLIENT.userbot
 
 
@@ -163,7 +163,7 @@ def is_dongo_alive():
 # Init Redis
 # Redis will be hosted inside the docker container that hosts the bot
 # We need redis for just caching, so we just leave it to non-persistent
-REDIS = StrictRedis(host='', port=0, db=0)
+REDIS = StrictRedis(host='localhost', port=6379, db=0)
 
 
 def is_redis_alive():
