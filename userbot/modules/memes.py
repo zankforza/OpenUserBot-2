@@ -743,7 +743,7 @@ async def facepalm(e):
 
 @register(outgoing=True, pattern="^.cry$")
 async def cry(e):
-    """ y u du dis, i cry everytime !! """
+    """ nangis aja """
     await e.edit(choice(CRI))
 
 
